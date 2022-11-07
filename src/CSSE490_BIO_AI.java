@@ -2,6 +2,12 @@ package src;
 
 import java.text.DecimalFormat;
 
+/*
+ * Gradebook for ----------CSSE490-Bio AI----------
+ * Most functions are taken care of by GradebookFunctions.java
+ * The first set or arrays is for grades in each category, add grades as needed
+ * The second set of ints is for the weight of each category
+ */
 public class CSSE490_BIO_AI {
 
     // Set arrays for our grade calculations
@@ -45,6 +51,10 @@ public class CSSE490_BIO_AI {
         return this.gradebookFunctions.evaluateArray(this.participationGrade);
     }
 
+    /*
+     * This function will use the averages for each category and its weight to
+     * calculate a final grade
+     */
     public void calculateGrade() {
 
         // Get the Gradebook Functions ready
@@ -59,6 +69,10 @@ public class CSSE490_BIO_AI {
         System.out.println("Final Percentage: " + finalPercent + "%");
     }
 
+    /*
+     * The Main function. Just gets the ball rolling and gets rid of stupid static
+     * calls
+     */
     public static void main(String[] args) {
         CSSE490_BIO_AI gradebook = new CSSE490_BIO_AI();
         gradebook.calculateGrade();

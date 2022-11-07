@@ -1,7 +1,16 @@
 package src;
 
+/*
+ * This class handles the main functions for the gradebooks
+ * This file keeps us from copying a ton of code, so every book can use the same functions
+ * File was created by: Eddie Mannan 11/6/2022
+ */
 public class GradebookFunctions {
 
+    /*
+     * Input: An array of doubles
+     * Output: The average value of the given array
+     */
     public double evaluateArray(double[] array) {
 
         double total = 0;
@@ -13,6 +22,10 @@ public class GradebookFunctions {
         return total;
     }
 
+    /*
+     * Input: A double for the final percentage
+     * Output: A string of letters, pluses and minuses
+     */
     public String convertToLetter(double percent) {
 
         if (percent < 100 && percent >= 90) {
