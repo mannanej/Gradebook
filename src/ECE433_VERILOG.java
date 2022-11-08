@@ -11,9 +11,9 @@ import java.text.DecimalFormat;
 public class ECE433_VERILOG {
 
     // Set arrays for our grade calculations
-    public final double[] examGrade = { 86.21 };
-    public final double[] homeworkGrade = { 100, 80, 100, 66.67, 74, 100, 100, 60 };
-    public final double[] labGrade = { 100 };
+    public final double[] examGrade = { 77 };
+    public final double[] homeworkGrade = { 21.82, 82.4, 52 };
+    public final double[] labGrade = { 100, 100, 100, 70, 70, 70, 100, 90 };
     public final double[] finalProjectGrade = { 100 };
     // Set our individual weights
     public final int examWeight = 20;
