@@ -3,35 +3,24 @@ package src;
 import java.text.DecimalFormat;
 
 /*
- * Gradebook for ----------CSSE490: BioInspired Artificial Intelligence----------
+ * Gradebook for ----------ECE434: Embedded Linux----------
  * Most functions are taken care of by GradebookFunctions.java
  * The first set or arrays is for grades in each category, add grades as needed
  * The second set of ints is for the weight of each category
  */
-public class CSSE490_BIO_AI {
+public class ECE434_EMBEDDED_LINUX {
 
     // Set arrays for our grade calculations
-    public final double[] examGrade = { 86.21, 64 };
-    public final double[] homeworkGrade = { 100, 80, 100, 66.67, 74, 100, 100, 70 };
-    public final double[] quizGrade = { 100 };
-    public final double[] finalProjectGrade = { 100 };
-    public final double[] participationGrade = { 100 };
+    public final double[] homeworkGrade = { 100 };
+    public final double[] quizGrade = { 80, 90 };
+    public final double[] finalProjectGrade = { 60 };
     // Set our individual weights
-    public final int examWeight = 20;
-    public final int homeworkWeight = 40;
-    public final int quizWeight = 10;
-    public final int finalProjectWeight = 20;
-    public final int participationWeight = 10;
-    // This class has AWESOMESAUCE, which is every 10 points is 1% extra credit
-    public final double awesomesauce = 0;
+    public final int homeworkWeight = 20;
+    public final int quizWeight = 20;
+    public final int finalProjectWeight = 60;
     // This will help us to round our final grade at the end
     public final DecimalFormat df = new DecimalFormat("0.00");
     public GradebookFunctions gradebookFunctions;
-
-    public double exam() {
-
-        return this.gradebookFunctions.evaluateArray(this.examGrade);
-    }
 
     public double homework() {
 
@@ -48,11 +37,6 @@ public class CSSE490_BIO_AI {
         return this.gradebookFunctions.evaluateArray(this.finalProjectGrade);
     }
 
-    public double participation() {
-
-        return this.gradebookFunctions.evaluateArray(this.participationGrade);
-    }
-
     /*
      * This function will use the averages for each category and its weight to
      * calculate a final grade
@@ -62,10 +46,8 @@ public class CSSE490_BIO_AI {
         // Get the Gradebook Functions ready
         this.gradebookFunctions = new GradebookFunctions();
         // Calculate the final grade based off of weights and averages
-        double finalPercent = ((this.exam() * this.examWeight) + (this.homework() * this.homeworkWeight)
-                + (this.quiz() * this.quizWeight) + (this.finalProject() * this.finalProjectWeight)
-                + (this.participation() * this.participationWeight)) / 100;
-        finalPercent += (this.awesomesauce / 10);
+        double finalPercent = ((this.homework() * this.homeworkWeight)
+                + (this.quiz() * this.quizWeight) + (this.finalProject() * this.finalProjectWeight)) / 100;
         finalPercent = Math.round(finalPercent * 100.0) / 100.0;
         // Print info for the user
         System.out.println("Final Grade: " + this.gradebookFunctions.convertToLetter(finalPercent));
@@ -77,7 +59,7 @@ public class CSSE490_BIO_AI {
      * calls
      */
     public static void main(String[] args) {
-        CSSE490_BIO_AI gradebook = new CSSE490_BIO_AI();
+        ECE434_EMBEDDED_LINUX gradebook = new ECE434_EMBEDDED_LINUX();
         gradebook.calculateGrade();
         System.out.println("End of Gradebook");
         System.out.println("");
