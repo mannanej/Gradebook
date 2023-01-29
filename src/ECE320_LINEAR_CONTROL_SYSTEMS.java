@@ -11,10 +11,10 @@ import java.text.DecimalFormat;
 public class ECE320_LINEAR_CONTROL_SYSTEMS {
 
     // Set arrays for our grade calculations
-    public final double[] homeworkGrade = { 60 };
-    public final double[] labGrade = { 0, 90, 95, 100, 70, 0, 0, 60, 0 };
-    public final double[] quizGrade = { 81 };
-    public final double[] examGrade = { 60 };
+    public final double[] homeworkGrade = { 86.36, 88.24, 66.12, 64.81 };
+    public final double[] labGrade = { 60, 90, 95, 100, 70, 60, 60, 60, 60 };
+    public final double[] quizGrade = { 80.95, 61.54, 57.14, 53.85 };
+    public final double[] examGrade = { 42 };
     public final double[] finalExamGrade = { 60 };
     // Set our individual weights
     public final int examWeight = 30;
