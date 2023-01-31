@@ -14,8 +14,8 @@ public class ECE320_LINEAR_CONTROL_SYSTEMS {
     public final double[] homeworkGrade = { 86.36, 88.24, 66.12, 64.81 };
     public final double[] labGrade = { 60, 90, 95, 100, 70, 60, 60, 60, 60 };
     public final double[] quizGrade = { 80.95, 61.54, 57.14, 53.85 };
-    public final double[] examGrade = { 42 };
-    public final double[] finalExamGrade = { 60 };
+    public final double[] examGrade = { 42, 56 };
+    public final double[] finalExamGrade = { 82 };
     // Set our individual weights
     public final int examWeight = 30;
     public final int homeworkWeight = 15;
