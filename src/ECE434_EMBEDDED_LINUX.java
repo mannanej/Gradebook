@@ -11,8 +11,8 @@ import java.text.DecimalFormat;
 public class ECE434_EMBEDDED_LINUX {
 
     // Set arrays for our grade calculations
-    public final double[] homeworkGrade = { 100, 80, 100, 70, 70, 60 };
-    public final double[] quizGrade = { 80, 90, 80, 70, 40, 40 };
+    public final double[] homeworkGrade = { 100, 80, 100, 70, 70, 60, 100, 70, 75 };
+    public final double[] quizGrade = { 85, 90, 80, 70, 40, 40, 40, 80, 83.33 }; // Bonus quiz gave a five free points, added to first
     public final double[] finalProjectGrade = { 60 };
     // Set our individual weights
     public final int homeworkWeight = 20;
